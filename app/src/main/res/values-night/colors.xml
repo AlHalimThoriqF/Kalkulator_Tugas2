@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="thumb_tint">#FFFFFF</color>
+    <color name="number">#FFFFFFFF</color>
+    <color name="orange">#FFA500</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_doff">#22252d</color>
+    <color name="black_doff_two">#272b33</color>
+    <color name="grey">#2C313A</color>
+    <color name="blue_track">#206B7E</color>
+</resources>

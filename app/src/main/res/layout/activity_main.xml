@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_doff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:padding="@dimen/_12sdp"
+        android:thumb="@drawable/ic_dark_mode"
+        android:thumbTint="@color/thumb_tint"
+        android:track="@drawable/track_dark_mode"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_above="@id/linear_number"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/tv_expressions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/number"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/number"
+            android:textSize="@dimen/_32ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_number"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout style="@style/LayoutLinearLayout">
+
+            <TextView
+                android:id="@+id/text_clear"
+                style="@style/LayoutTextView"
+                android:background="@drawable/background_clear"
+                android:text="@string/ce"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_open"
+                style="@style/LayoutTextView"
+                android:text="@string/kurung_buka"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/text_close"
+                style="@style/LayoutTextView"
+                android:text="@string/kurung_tutup"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/text_distribution"
+                style="@style/LayoutTextView"
+                android:text="@string/pembagian"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutLinearLayout">
+
+            <TextView
+                android:id="@+id/text_number_seven"
+                style="@style/LayoutTextView"
+                android:text="@string/tujuh"
+                android:textColor="@color/number" />
+            <TextView
+                android:id="@+id/text_number_eight"
+                style="@style/LayoutTextView"
+                android:text="@string/delapan"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_number_nine"
+                style="@style/LayoutTextView"
+                android:text="@string/sembilan"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_multiplication"
+                style="@style/LayoutTextView"
+                android:text="@string/perkalian"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutLinearLayout">
+
+            <TextView
+                android:id="@+id/text_number_four"
+                style="@style/LayoutTextView"
+                android:text="@string/empat"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_number_five"
+                style="@style/LayoutTextView"
+                android:text="@string/lima"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_number_six"
+                style="@style/LayoutTextView"
+                android:text="@string/enam"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_subtraction"
+                style="@style/LayoutTextView"
+                android:text="@string/pengurangan"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutLinearLayout">
+
+            <TextView
+                android:id="@+id/text_number_one"
+                style="@style/LayoutTextView"
+                android:text="@string/satu"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_number_two"
+                style="@style/LayoutTextView"
+                android:text="@string/dua"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_number_three"
+                style="@style/LayoutTextView"
+                android:text="@string/tiga"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_increase"
+                style="@style/LayoutTextView"
+                android:text="@string/penjumlahan"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutLinearLayout">
+
+            <TextView
+                android:id="@+id/text_coma"
+                style="@style/LayoutTextView"
+                android:text="@string/koma"
+                android:textColor="@color/number" />
+
+            <TextView
+                android:id="@+id/text_number_zero"
+                style="@style/LayoutTextView"
+                android:text="@string/nol"
+                android:textColor="@color/number" />
+
+            <LinearLayout
+                android:id="@+id/back_space_button"
+                style="@style/LayoutTextView"
+                android:textColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_backspace"
+                    app:drawableTint="@color/number" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_together_with"
+                style="@style/LayoutTextView"
+                android:background="@drawable/background_clear"
+                android:text="@string/hasil"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
